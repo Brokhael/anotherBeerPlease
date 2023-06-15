@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "a6976949-39b1-4b05-89f6-3d7b84e12cc6",
+		"name": "beerDispenser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7163081"
+	},
+	"item": [
+		{
+			"name": "Create beer dispenser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "flow_volume",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/beerDispensers?flow_volume=0.1&price=4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"beerDispensers"
+					],
+					"query": [
+						{
+							"key": "flow_volume",
+							"value": "0.1"
+						},
+						{
+							"key": "price",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Dispenser",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/beerDispensers/3?price=4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"beerDispensers",
+						"3"
+					],
+					"query": [
+						{
+							"key": "price",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get one dispenser",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "List all dispensers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/beerDispensers",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"beerDispensers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Open tap",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/beerDispensers/6/tap",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"beerDispensers",
+						"6",
+						"tap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close tap",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/beerDispensers/6/tap",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"beerDispensers",
+						"6",
+						"tap"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all revenues",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/revenues",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"revenues"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get dispenser revenues",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
