@@ -3,7 +3,8 @@
 - navigato to the project location and run `composer install`
 - run `symfony serve` command to run the application locally
 - you can use postman to test the requests, I added the requests ready to import to postman in the file `beerDispenser.postman_collection.json`
-- configure the `.env` file with your `DATABASE_URL`
+- configure the `.env` file with your `DATABASE_URL`, you can create a `.env.local` file with the url
+- edit the `.env.test` file with yout `DATABASE_URL`
 - create a schema named `beer` and `beer_test` with default collation and charset
 - run `php bin/console doctrine:schema:create --env=test`
 - run `php bin/console doctrine:migrations:migrate`
